@@ -11,7 +11,7 @@ body{
 /* Page-Header */
 .header-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -21,7 +21,6 @@ body{
     align-items: center;
     justify-content: space-between;
     width: 90%;
-
 }
 nav > ul{
     list-style: none;
@@ -157,4 +156,37 @@ footer{
 }
 .footer-heading{
     font-size: 24px;
+}
+
+/* ------------------------
+        Media Queries
+--------------------------- */
+/* Media Queries for Mobile Devices */
+
+@media only screen and (max-width:688px){
+    
+    /* Page-Header */
+    .top-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .top-content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .collections{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        width: 100%;
+
+
+    }
+    .products{
+        display: flex;
+        flex-direction: column;
+    }
 }
