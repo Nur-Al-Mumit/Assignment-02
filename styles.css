@@ -4,7 +4,9 @@
 /* Common style */
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: #F1F6EF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 } 
 /* Page-Header */
 .header-container{
@@ -19,7 +21,7 @@ body{
     align-items: center;
     justify-content: space-between;
     width: 90%;
-    background-color: white;
+
 }
 nav > ul{
     list-style: none;
@@ -49,18 +51,21 @@ nav > ul{
 .top-container{
     display: flex;
     justify-content: center;
-    background-color: white;
+    align-items: center;
     margin-top: 30px;
-    
 }
 .top-content{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 80%;
 }
 .top-content-heading{
     font-size: 52px;
+}
+.top-content-info{
+    padding: 25px;
+    width: 70%;
 }
 .top-image{
     width: 440px;
@@ -74,7 +79,7 @@ nav > ul{
 .logo-container{
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 100px;
 }
 .logos{
     border-bottom: 2px solid lightgray;
@@ -85,11 +90,10 @@ nav > ul{
 
 
 /* For Collection page */
-/* .collection-container{
-    display: flex;
-    justify-content: center;
-} */
 .collection-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin-top: 100px;
     
@@ -98,42 +102,59 @@ nav > ul{
     text-align: center;
     font-size: 28px;
 }
-.all-collections{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .collections{
+    margin-top: 25px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
+    grid-gap: 50px;
 }
 .collection{
     border-radius: 10px;
     box-shadow: 5px 5px 20px gray;
-    width: 330px;
+    width: 329px;
     height: 476px;
 }
 .collection img{
-    height: 256px;
     width: 300px;
+    height: 256px;
     margin: 15px;
 }
 
 /* For Featured products */
+.products-container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
 
-.Featured-products-heading{
+.products-heading{
     text-align: center;
 }
 .products{
     display: flex;
+    /* justify-content: center; */
+    border: solid;
+
 }
-
-
+.product{
+    margin: 25px;
+}
+.product img{
+    width: 300px;
+    height: 280px;
+}
 
 /* For footer content */
 footer{
+    margin-top: 100px;
     background-color: navy;
     color: white;
     text-align: center;
+    padding: 10px;
+}
+.footer-heading{
+    font-size: 24px;
 }
