@@ -1,0 +1,139 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+/* Common style */
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #F1F6EF;
+} 
+/* Page-Header */
+.header-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.top-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    background-color: white;
+}
+nav > ul{
+    list-style: none;
+}
+.menu-items{
+    display: flex;
+}
+.menu-item{
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+}
+
+/* Top page Heading */
+.header-heading{
+    font-size: 24px;
+}
+
+/* For the top */
+.link-button{
+    text-decoration: none;
+    color: white;
+    background-color: salmon;
+    padding: 15px;
+    border-radius: 50px;
+}
+.top-container{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin-top: 30px;
+    
+}
+.top-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+.top-content-heading{
+    font-size: 52px;
+}
+.top-image{
+    width: 440px;
+    height: 415px;
+    background-image: url(images/Circle-design.svg);
+    Width: 475px;
+    Height:475px;
+}
+
+/* for logo */
+.logo-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.logos{
+    border-bottom: 2px solid lightgray;
+}
+.logos img{
+    margin-left: 25px;
+}
+
+
+/* For Collection page */
+/* .collection-container{
+    display: flex;
+    justify-content: center;
+} */
+.collection-container{
+    align-items: center;
+    margin-top: 100px;
+    
+}
+.Collection-heading{
+    text-align: center;
+    font-size: 28px;
+}
+.all-collections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.collection{
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px gray;
+    width: 330px;
+    height: 476px;
+}
+.collection img{
+    height: 256px;
+    width: 300px;
+    margin: 15px;
+}
+
+/* For Featured products */
+
+.Featured-products-heading{
+    text-align: center;
+}
+.products{
+    display: flex;
+}
+
+
+
+/* For footer content */
+footer{
+    background-color: navy;
+    color: white;
+    text-align: center;
+}
