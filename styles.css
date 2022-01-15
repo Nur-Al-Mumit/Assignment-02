@@ -72,6 +72,10 @@ nav > ul{
     background-image: url(images/Circle-design.svg);
     Width: 475px;
     Height:475px;
+    transition: transform 0.5s;
+}
+.top-image:hover{
+    transform: scale(1.2);
 }
 
 /* for logo */
@@ -111,12 +115,18 @@ nav > ul{
     border-radius: 10px;
     box-shadow: 5px 5px 20px gray;
     width: 329px;
-    height: 476px;
+    height: 600px;
 }
 .collection img{
     width: 300px;
     height: 256px;
     margin: 15px;
+}
+.collection-ditels{
+    padding: 20px;
+}
+.item-rating{
+    color: orange;
 }
 
 /* For Featured products */
@@ -151,10 +161,26 @@ footer{
     color: white;
     text-align: center;
     padding: 10px;
+    width: 100% ;
 }
 .footer-heading{
     font-size: 24px;
 }
+footer a{
+    text-decoration: none;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+}
+.icon{
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+}
+
+
+
 
 /* ------------------------
         Media Queries
@@ -197,9 +223,6 @@ footer{
 /* Media Queries for Tablet Devices */
 
 @media only screen and (min-width: 689px) and (max-width: 921px) {
-    body{
-        background-color: yellowgreen;
-    }
     .top-header{
         display: flex;
         flex-direction: column;
