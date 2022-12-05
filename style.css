@@ -1,0 +1,43 @@
+.top-container{
+    display: flex;
+    justify-content: center;
+}
+.banner-container{
+    background-color: black;
+    border-radius: 40px;
+    /* height: 646px; */
+    width: 70%;
+    
+}
+.banner{
+    display: flex;
+}
+.banner-info{
+    margin-left: 20px;
+    padding: 20px;
+    color: white;
+    width: 50%;
+}
+.banner-info h1{
+    font-size: 50px;
+}
+.banner-info p{
+    font-size: 20px;
+}
+.banner-info button{
+    width: 100%;
+    border: 0px;
+    padding: 20px 40px;
+    color: #FFFFFF;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #DD0000;
+}
+.banner-img{
+    width: 50%;
+    border: #DD0000 solid 5px;
+}
+.banner img{
+    width: 100%;
+}
+
