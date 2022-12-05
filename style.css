@@ -1,43 +1,80 @@
-.top-container{
+.top-container {
     display: flex;
     justify-content: center;
 }
-.banner-container{
+
+.banner-container {
     background-color: black;
     border-radius: 40px;
-    /* height: 646px; */
     width: 70%;
-    
+
 }
-.banner{
+
+.banner {
     display: flex;
 }
-.banner-info{
+
+.banner-info {
     margin-left: 20px;
     padding: 20px;
     color: white;
     width: 50%;
 }
-.banner-info h1{
+
+.banner-info h1 {
     font-size: 50px;
 }
-.banner-info p{
+
+.banner-info p {
     font-size: 20px;
 }
-.banner-info button{
-    width: 100%;
+
+.banner-info button {
+    width: 150px;
     border: 0px;
-    padding: 20px 40px;
+    padding: 10px;
     color: #FFFFFF;
     font-size: 20px;
     border-radius: 5px;
     background-color: #DD0000;
 }
-.banner-img{
+
+.banner-img {
+    display: flex;
     width: 50%;
-    border: #DD0000 solid 5px;
 }
-.banner img{
+
+.banner img {
     width: 100%;
 }
 
+/* ------------------------
+        Media Queries
+--------------------------- */
+/* Media Queries for Mobile Devices */
+
+@media only screen and (max-width: 640px) {
+    .banner {
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-info {
+        margin-left: 20px;
+        margin-right: 20px;
+        color: white;
+        width: 80%;
+    }
+    .banner-img {
+        padding: 0px 20px ;
+        display: flex;
+        width: 90%;
+    }
+    
+
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1023px){
+    body{
+        background-color: rebeccapurple;
+    }
+}
