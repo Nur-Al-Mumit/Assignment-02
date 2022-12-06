@@ -39,7 +39,8 @@ body {
     font-size: 20px;
 }
 
-.banner-info button {
+.banner-info button,
+.view-btn button {
     width: 150px;
     border: 0px;
     padding: 10px;
@@ -97,7 +98,7 @@ body {
     margin: 15px;
     color: #161616;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 #blog {
@@ -120,14 +121,16 @@ body {
     gap: 30px;
 }
 
-.blog{
+.blog {
     border-radius: 20px;
     box-shadow: 2px 2px 20px 5px lightgray;
 }
-.blog-info{
+
+.blog-info {
     padding: 15px;
 }
-.blogs-btn{
+
+.blogs-btn {
     background-color: #FFFFFF;
     padding: 10px 20px;
     color: #161616;
@@ -135,6 +138,63 @@ body {
     border: #161616 solid 1px;
     border-radius: 5px;
 }
+
+.view-btn {
+    display: none;
+}
+
+/*********************
+    Footer section 
+ *********************/
+
+footer {
+    margin-top: 150px;
+    background-color: #161616;
+}
+
+hr {
+    width: 90%;
+}
+
+.footer-header h1 {
+    color: #FFFFFF;
+    font-size: 50px;
+    text-align: center;
+}
+
+.all-links{
+    display: flex;
+    justify-content: center;
+}
+
+.links {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.links a {
+    margin-left: 50px;
+    text-decoration: none;
+    color: #B9B9B9;
+}
+
+.social-media-links {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.social-media-links a {
+    margin: 5px 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 50px;
+}
+
+
+
+
 
 /* ------------------------
        Media Queries
@@ -182,10 +242,33 @@ body {
     /* Menu part */
 
     .menu-container {
+        background-color: #FFFFFF;
         width: 100%;
         height: 100%;
     }
 
+    .menu-container li {
+        border: #E8E8E8 solid 2px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        justify-items: end;
+    }
+    .links a {
+        margin: 20px;
+        font-size: 20px;
+    }
+
+    .social-media-links {
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
 
 @media only screen and (min-width: 641px) and (max-width: 768px) {
@@ -217,5 +300,10 @@ body {
         padding: 5px 30px;
         border: #E8E8E8 solid 2px;
         border-radius: 5px;
+    }
+
+    .view-btn {
+        margin: 50px auto;
+        display: block;
     }
 }
