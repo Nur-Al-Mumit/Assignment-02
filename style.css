@@ -1,8 +1,10 @@
 /* Google Fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-body{
+
+body {
     font-family: 'Poppins', sans-serif;
 }
+
 /*-----------------
     Top Container
 -------------------*/
@@ -55,27 +57,30 @@ body{
 .banner img {
     width: 100%;
 }
+
 /* <!---------------- */
 /* Mid Section  */
 /* ------------------> */
-.mid-container{
+.mid-container {
     margin-top: 150px;
 }
 
 /* Menu part */
 
-.menu-container{
+.menu-container {
     background-color: #161616;
     width: 300px;
     height: 250px;
     margin-right: 15px;
     border-radius: 15px;
 }
-.menu-container ul{
+
+.menu-container ul {
     /* margin: 0; */
     padding: 20px;
 }
-.menu-container li{
+
+.menu-container li {
     text-align: center;
     list-style: none;
     font-weight: bold;
@@ -86,13 +91,18 @@ body{
     text-decoration: none;
     border-radius: 5px;
 }
+#blog{
+    background-color: #DD0000;
+    color:#FFFFFF;
+    border: none;
+}
 
-.blogs-container{
+.blogs-container {
     display: flex;
     justify-content: space-between;
 }
 
-.blogs{
+.blogs {
     flex-grow: 1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -111,17 +121,61 @@ body{
         display: flex;
         flex-direction: column;
     }
+
     .banner-info {
         margin-left: 20px;
         margin-right: 20px;
         color: white;
         width: 80%;
     }
+
     .banner-img {
-        padding: 0px 20px ;
+        padding: 0px 20px;
         display: flex;
         width: 90%;
     }
-    
 
+    /* Mid Section */
+    .blogs-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media only screen and (min-width: 641px) and (max-width: 768px) {
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Mid Section */
+    .blogs-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-container {
+        width: 100%;
+        background-color: #FFFFFF;
+        height: 100%;
+        border-radius: 15px;
+    }
+
+    .menu-container ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu-container li {
+        padding: 5px 30px;
+        border: #E8E8E8 solid 2px;
+        border-radius: 5px;
+    }
 }
