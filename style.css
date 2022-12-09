@@ -47,7 +47,11 @@ body {
     color: #FFFFFF;
     font-size: 20px;
     border-radius: 5px;
-    background-color: #DD0000;
+    background-color: blue;
+    transition: 1s;
+}
+.banner-btn:hover{
+    transform: scale(1.15);
 }
 
 .banner-img {
@@ -98,14 +102,14 @@ ul a {
 }
 
 #blog {
-    background-color: #DD0000;
+    background-color: rgb(28, 28, 255);
     color: #FFFFFF;
     border: none;
 }
 
 #upcoming li {
     color: #FFFFFF;
-    background-color: #DD0000;
+    background-color: blue;
 }
 
 /*--------------------------------------
@@ -207,6 +211,7 @@ hr {
 }
 
 .footer-header h1 {
+    padding-top: 50px;
     color: #FFFFFF;
     font-size: 50px;
     text-align: center;
